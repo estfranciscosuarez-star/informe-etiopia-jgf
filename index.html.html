@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JGF Capital - Informe Estratégico de Inteligencia: Etiopía (2026–2056)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cinzel', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    },
+                    colors: {
+                        navy: {
+                            950: '#060B14',
+                            900: '#0A111E',
+                            850: '#0F1827',
+                            800: '#131F33',
+                            700: '#1C2C46',
+                            600: '#2A3E5E'
+                        },
+                        gold: {
+                            500: '#E2C784',
+                            400: '#D4AF37',
+                            300: '#C5A059',
+                            200: '#F3E5AB',
+                            100: '#FAF0CA'
+                        },
+                        steel: {
+                            400: '#B8C9DC',
+                            500: '#8AA0BC',
+                            600: '#5C7B97',
+                            700: '#2C435A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 380px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060B14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1C2C46;
+            border-radius: 4px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF0CA 0%, #D4AF37 50%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.08);
+        }
+        .gold-border-glow:hover {
+            border: 1px solid rgba(212, 175, 55, 0.6);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.18);
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-slate-200 font-sans antialiased min-h-screen">
+
+<header class="sticky top-0 z-50 bg-navy-950/95 backdrop-blur border-b border-gold-400/30 shadow-2xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <div class="border-l-2 border-gold-400 pl-3">
+                <span class="font-serif text-lg md:text-xl font-bold tracking-widest text-gold-400 block uppercase">JGF CAPITAL</span>
+                <span class="text-[10px] md:text-xs font-light text-slate-300 tracking-wider block">Visión financiera, crecimiento sostenible</span>
+            </div>
+        </div>
+        <nav class="hidden lg:flex space-x-6 text-xs font-medium text-slate-300">
+            <a href="#ficha" class="hover:text-gold-400 transition-colors">Ficha País</a>
+            <a href="#demographics" class="hover:text-gold-400 transition-colors">Demografía (2026-2056)</a>
+            <a href="#social" class="hover:text-gold-400 transition-colors">Capital Humano</a>
+            <a href="#governance" class="hover:text-gold-400 transition-colors">Gobernanza</a>
+            <a href="#infrastructure" class="hover:text-gold-400 transition-colors">Infraestructura</a>
+            <a href="#energy" class="hover:text-gold-400 transition-colors">Sostenibilidad</a>
+            <a href="#synthesis" class="hover:text-gold-400 transition-colors">Síntesis y Hallazgos</a>
+        </nav>
+        <div class="text-right">
+            <span class="text-[10px] uppercase tracking-widest text-gold-300 bg-gold-400/10 border border-gold-400/30 px-3 py-1 rounded-full inline-block">
+                Consultoría • Economía • Inversiones
+            </span>
+        </div>
+    </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+    <section class="bg-gradient-to-br from-navy-900 via-navy-850 to-navy-950 border border-gold-400/40 rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gold-400/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-4xl relative z-10 space-y-4">
+            <div class="flex items-center space-x-3">
+                <span class="h-0.5 w-10 bg-gold-400"></span>
+                <span class="text-xs font-semibold uppercase tracking-widest text-gold-400">Informe Estratégico de País & Proyección a 30 Años</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-serif font-extrabold text-white leading-tight">
+                Evaluación Multidimensional de Mercado: <span class="gold-gradient-text">ETIOPÍA</span>
+            </h1>
+            <p class="text-sm md:text-base text-slate-300 leading-relaxed font-light">
+                Análisis integral de inteligencia macroeconómica para decisiones corporativas e inversión institucional. Etiopía experimenta un cambio estructural histórico caracterizado por la liberación de su régimen cambiario, la creación de la Bolsa de Valores de Etiopía (ESX), su incorporación al bloque BRICS y una expansión demográfica sostenida proyectada hacia el horizonte 2026–2056.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 mt-6 border-t border-gold-400/20 relative z-10">
+            <div class="bg-navy-950/80 p-4 rounded-xl border border-gold-400/20">
+                <span class="text-[11px] text-slate-400 block font-light uppercase tracking-wider">Población (2026)</span>
+                <span class="text-2xl font-serif font-bold text-gold-400 mt-1 block">138.90 M</span>
+                <span class="text-[10px] text-steel-400 block mt-1">▲ 2º País más poblado de África</span>
+            </div>
+            <div class="bg-navy-950/80 p-4 rounded-xl border border-gold-400/20">
+                <span class="text-[11px] text-slate-400 block font-light uppercase tracking-wider">PIB Nominal Estimado</span>
+                <span class="text-2xl font-serif font-bold text-white mt-1 block">$126.36 B</span>
+                <span class="text-[10px] text-gold-400 block mt-1">Crecimiento real 7.1% – 9.8%</span>
+            </div>
+            <div class="bg-navy-950/80 p-4 rounded-xl border border-gold-400/20">
+                <span class="text-[11px] text-slate-400 block font-light uppercase tracking-wider">Matriz Renovable</span>
+                <span class="text-2xl font-serif font-bold text-gold-200 mt-1 block">&gt; 90%</span>
+                <span class="text-[10px] text-slate-300 block mt-1">GERD: 5,000+ MW Hidro</span>
+            </div>
+            <div class="bg-navy-950/80 p-4 rounded-xl border border-gold-400/20">
+                <span class="text-[11px] text-slate-400 block font-light uppercase tracking-wider">Categoría de Mercado</span>
+                <span class="text-2xl font-serif font-bold text-gold-300 mt-1 block">Standalone</span>
+                <span class="text-[10px] text-slate-400 block mt-1">Índices MSCI / FTSE</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="ficha" class="space-y-6">
+        <div class="flex items-center space-x-3 border-l-4 border-gold-400 pl-4">
+            <div>
+                <h2 class="text-xl md:text-2xl font-serif font-bold text-white tracking-wide">1. Ficha General del País</h2>
+                <p class="text-xs text-slate-400">Resumen ejecutivo con los parámetros institucionales, geográficos y financieros fundamentales.</p>
+            </div>
+        </div>
+
+        <div class="bg-navy-900 border border-gold-400/30 rounded-2xl p-6 shadow-xl space-y-6">
+            <p class="text-sm text-slate-300 leading-relaxed font-light">
+                Esta ficha consolida la estructura estatal, cambiaria y geográfica de Etiopía, sirviendo como base de referencia para evaluar los marcos de contratación, residencia fiscal y capacidad de absorción de capital privado.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 gold-border-glow transition-all">
+                    <span class="text-gold-400 font-serif font-bold text-sm block mb-1">📍 Ubicación Estratégica</span>
+                    <p class="text-white font-medium text-xs leading-relaxed">Cuerno de África</p>
+                    <span class="text-[11px] text-slate-400 block mt-2">Límites: Eritrea, Yibuti, Somalia, Kenia, Sudán del Sur y Sudán. Sin salida directa al mar.</span>
+                </div>
+
+                <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 gold-border-glow transition-all">
+                    <span class="text-gold-400 font-serif font-bold text-sm block mb-1">👥 Población Total (2026)</span>
+                    <p class="text-white font-medium text-xs leading-relaxed">138.90 Millones de Hab.</p>
+                    <span class="text-[11px] text-slate-400 block mt-2">2º país más poblado de África y 10º a nivel mundial. Tasa de crecimiento: ~2.53% anual.</span>
+                </div>
+
+                <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 gold-border-glow transition-all">
+                    <span class="text-gold-400 font-serif font-bold text-sm block mb-1">🏛️ Capital Institucional</span>
+                    <p class="text-white font-medium text-xs leading-relaxed">Adís Abeba (Addis Ababa)</p>
+                    <span class="text-[11px] text-slate-400 block mt-2">Centro diplomático de África. Sede central de la Unión Africana (UA) y de la UNECA.</span>
+                </div>
+
+                <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 gold-border-glow transition-all">
+                    <span class="text-gold-400 font-serif font-bold text-sm block mb-1">🏙️ Principales Ciudades</span>
+                    <p class="text-white font-medium text-xs leading-relaxed">Dire Dawa, Mekelle, Gondar, Bahir Dar, Hawassa, Adama, Jimma</p>
+                    <span class="text-[11px] text-slate-400 block mt-2">Nodos regionales agroindustriales, textiles y manufactureros.</span>
+                </div>
+
+                <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 gold-border-glow transition-all">
+                    <span class="text-gold-400 font-serif font-bold text-sm block mb-1">🗣️ Idiomas Oficiales</span>
+                    <p class="text-white font-medium text-xs leading-relaxed">Amhárico, Afaan Oromo, Tigrinya, Somalí, Afar</p>
+                    <span class="text-[11px] text-slate-400 block mt-2">El inglés es el idioma corporativo, comercial y de educación superior.</span>
+                </div>
+
+                <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 gold-border-glow transition-all">
+                    <span class="text-gold-400 font-serif font-bold text-sm block mb-1">💵 Moneda y Régimen</span>
+                    <p class="text-white font-medium text-xs leading-relaxed">Birr Etíope (ETB)</p>
+                    <span class="text-[11px] text-gold-300 block mt-2">Transición a régimen de flotación libre por mercado desde julio de 2024.</span>
+                </div>
+
+                <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 gold-border-glow transition-all">
+                    <span class="text-gold-400 font-serif font-bold text-sm block mb-1">⚖️ Forma de Estado y Gobierno</span>
+                    <p class="text-white font-medium text-xs leading-relaxed">República Democrática Federal Parlamentaria</p>
+                    <span class="text-[11px] text-slate-400 block mt-2">Poder Ejecutivo encabezado por el Primer Ministro. Sistema federado por estados regionales.</span>
+                </div>
+
+                <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 gold-border-glow transition-all">
+                    <span class="text-gold-400 font-serif font-bold text-sm block mb-1">📊 Categoría de Mercado</span>
+                    <p class="text-white font-medium text-xs leading-relaxed">Mercado Standalone / Emergente Naciente</p>
+                    <span class="text-[11px] text-slate-400 block mt-2">Proceso de integración en índices internacionales tras la creación de la bolsa ESX.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demographics" class="space-y-6">
+        <div class="flex items-center space-x-3 border-l-4 border-gold-400 pl-4">
+            <div>
+                <h2 class="text-xl md:text-2xl font-serif font-bold text-white tracking-wide">2. Demografía y Mercado Potencial: Proyección a 30 Años (2026–2056)</h2>
+                <p class="text-xs text-slate-400">Modelación del bono demográfico, dinámica de urbanización y simulador interactivo de capacidad laboral.</p>
+            </div>
+        </div>
+
+        <div class="bg-navy-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+            <p class="text-sm text-slate-300 leading-relaxed font-light">
+                Con una edad mediana de 19.3 años y el 39% de la población por debajo de los 14 años, Etiopía posee una de las estructuras demográficas más jóvenes del mundo. La proyección hacia 2056 anticipa la incorporación continua de más de 2 millones de jóvenes al mercado laboral cada año, demandando inversiones masivas en manufactura, infraestructura digital y servicios.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-5 bg-navy-900 border border-gold-400/40 rounded-2xl p-6 shadow-xl space-y-6 flex flex-col justify-between">
+                <div>
+                    <div class="border-b border-slate-800 pb-3 mb-4">
+                        <h3 class="text-base font-serif font-bold text-gold-400 flex items-center">
+                            <span class="mr-2">⚙️</span> Simulador Interactivo Demográfico
+                        </h3>
+                        <p class="text-[11px] text-slate-400">Ajuste las variables para proyectar la evolución del mercado laboral e industrial.</p>
+                    </div>
+
+                    <div class="space-y-5">
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between text-xs font-semibold">
+                                <label for="growthSlider" class="text-slate-200">Tasa de Crecimiento Anual (%):</label>
+                                <span id="growthVal" class="text-gold-400 font-serif font-bold">2.53%</span>
+                            </div>
+                            <input type="range" id="growthSlider" min="1.20" max="3.20" step="0.05" value="2.53" 
+                                class="w-full h-2 bg-navy-950 rounded-lg appearance-none cursor-pointer accent-gold-400" oninput="updateDemographicModel()">
+                            <div class="flex justify-between text-[10px] text-slate-500">
+                                <span>1.20% (Baja)</span>
+                                <span>2.53% (Base)</span>
+                                <span>3.20% (Alta)</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between text-xs font-semibold">
+                                <label for="yearSlider" class="text-slate-200">Horizonte Temporal de Proyección:</label>
+                                <span id="yearVal" class="text-gold-400 font-serif font-bold">2036</span>
+                            </div>
+                            <input type="range" id="yearSlider" min="2026" max="2056" step="1" value="2036" 
+                                class="w-full h-2 bg-navy-950 rounded-lg appearance-none cursor-pointer accent-gold-400" oninput="updateDemographicModel()">
+                            <div class="flex justify-between text-[10px] text-slate-500">
+                                <span>2026</span>
+                                <span>2036 (10 años)</span>
+                                <span>2046 (20 años)</span>
+                                <span>2056 (30 años)</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between text-xs font-semibold">
+                                <label for="urbanSlider" class="text-slate-200">Tasa de Urbanización Objetivo (%):</label>
+                                <span id="urbanVal" class="text-gold-400 font-serif font-bold">30.0%</span>
+                            </div>
+                            <input type="range" id="urbanSlider" min="22.9" max="50.0" step="0.5" value="30.0" 
+                                class="w-full h-2 bg-navy-950 rounded-lg appearance-none cursor-pointer accent-gold-400" oninput="updateDemographicModel()">
+                            <div class="flex justify-between text-[10px] text-slate-500">
+                                <span>22.9% (Actual)</span>
+                                <span>35.0%</span>
+                                <span>50.0% (Avanzada)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 pt-4 border-t border-slate-800">
+                    <div class="bg-navy-950 p-3.5 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-slate-400 uppercase font-semibold block">Población Proyectada</span>
+                        <span id="resPop" class="text-lg font-serif font-bold text-white mt-0.5 block">178.33 M</span>
+                    </div>
+                    <div class="bg-navy-950 p-3.5 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-slate-400 uppercase font-semibold block">Adición Neta Total</span>
+                        <span id="resNet" class="text-lg font-serif font-bold text-steel-400 mt-0.5 block">+39.43 M</span>
+                    </div>
+                    <div class="bg-navy-950 p-3.5 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-slate-400 uppercase font-semibold block">Población Urbana</span>
+                        <span id="resUrban" class="text-lg font-serif font-bold text-gold-300 mt-0.5 block">53.50 M</span>
+                    </div>
+                    <div class="bg-navy-950 p-3.5 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-slate-400 uppercase font-semibold block">Nuevos Empleos/Año</span>
+                        <span id="resJobs" class="text-lg font-serif font-bold text-gold-400 mt-0.5 block">2.41 M/año</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-navy-900 border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-serif font-bold text-white mb-1">Evolución de la Trayectoria Poblacional y Urbana (2026 – 2056)</h3>
+                    <p class="text-xs text-slate-400 mb-4">Gráfico de proyección continua comparando volumen poblacional total frente a migración urbana.</p>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="demographicsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="space-y-6">
+        <div class="flex items-center space-x-3 border-l-4 border-gold-400 pl-4">
+            <div>
+                <h2 class="text-xl md:text-2xl font-serif font-bold text-white tracking-wide">3. Capital Humano y Desarrollo Social</h2>
+                <p class="text-xs text-slate-400">Análisis de la alfabetización, matrículas educativas, IDH y productividad laboral.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-6 bg-navy-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+                <h3 class="text-sm font-serif font-bold text-white mb-1">Métricas de Desarrollo Humano y Educación</h3>
+                <p class="text-xs text-slate-400 mb-4">Comparación de los indicadores fundamentales modelados con la paleta corporativa JGF Capital (Golds & Steel Slate).</p>
+
+                <div class="chart-container">
+                    <canvas id="humanCapitalChart"></canvas>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 bg-navy-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-serif font-bold text-gold-400 mb-3">Implicaciones Analíticas para el Inversionista</h3>
+                    <div class="space-y-3 text-xs text-slate-300">
+                        <div class="p-3.5 bg-navy-950 rounded-xl border border-slate-800">
+                            <span class="font-bold text-white block mb-1">▪ Costos Laborales Competitivos</span>
+                            Etiopía mantiene un costo salarial en manufactura liviana altamente atrayente respecto a Asia y el norte de África, favoreciendo plantas textiles y de ensamblaje.
+                        </div>
+                        <div class="p-3.5 bg-navy-950 rounded-xl border border-slate-800">
+                            <span class="font-bold text-white block mb-1">▪ Desafío en Formación Técnica y Secundaria</span>
+                            Existe un marcado contraste entre la cobertura primaria (76%) y la secundaria (30%), requiriendo que empresas multinacionales incorporen módulos de capacitación técnica especializada.
+                        </div>
+                        <div class="p-3.5 bg-navy-950 rounded-xl border border-slate-800">
+                            <span class="font-bold text-white block mb-1">▪ Índice de Gini Moderado (31.1)</span>
+                            Muestra una distribución del ingreso relativamente homogénea dentro del contexto regional, previniendo fricciones sociales de extrema polarización socioeconómica.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-navy-950 border border-gold-400/30 rounded-xl">
+                    <span class="text-xs font-serif font-bold text-gold-400 block mb-1">✦ Recomendación en Capital Humano:</span>
+                    <p class="text-[11px] text-slate-300">Los proyectos que contemplan alianzas con centros de formación técnico-vocacional obtienen incentivos fiscales prioritarios por parte de la Comisión de Inversiones de Etiopía (EIC).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="governance" class="space-y-6">
+        <div class="flex items-center space-x-3 border-l-4 border-gold-400 pl-4">
+            <div>
+                <h2 class="text-xl md:text-2xl font-serif font-bold text-white tracking-wide">4. Instituciones, Gobernanza y Riesgo Político</h2>
+                <p class="text-xs text-slate-400">Marco de regulación, creación de la Bolsa de Valores (ESX) y liberalización cambiaria.</p>
+            </div>
+        </div>
+
+        <div class="bg-navy-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+            <p class="text-sm text-slate-300 leading-relaxed font-light">
+                La aprobación de la Ley de Mercados de Capitales y la fundación de la Bolsa de Valores de Etiopía (ESX) constituyen el cambio institucional más profundo de las últimas tres décadas. Estas reformas buscan canalizar inversión extranjera directa y dinamizar la privatización parcial de activos públicos emblemáticos.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="bg-navy-900 p-6 rounded-2xl border-t-4 border-steel-400 border-x border-b border-slate-800 shadow-xl space-y-3">
+                <span class="text-xs font-serif font-bold text-steel-400 uppercase tracking-widest block">1. Reforma Monetaria y FMI</span>
+                <h3 class="text-sm font-bold text-white">Flotación del Birr y Respaldo Multilateral</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    Unificación del tipo de cambio desde julio de 2024 para eliminar distorsiones del mercado paralelo. Cuenta con un paquete de apoyo de más de USD $10,000 millones financiado por el FMI y el Banco Mundial.
+                </p>
+            </div>
+
+            <div class="bg-navy-900 p-6 rounded-2xl border-t-4 border-gold-400 border-x border-b border-slate-800 shadow-xl space-y-3">
+                <span class="text-xs font-serif font-bold text-gold-400 uppercase tracking-widest block">2. Apertura Financiera</span>
+                <h3 class="text-sm font-bold text-white">Bolsa de Valores de Etiopía (ESX)</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    Estructuración del mercado secundario de renta variable y fija. Apertura del sector bancario comercial y seguros a la participación de instituciones bancarias internacionales.
+                </p>
+            </div>
+
+            <div class="bg-navy-900 p-6 rounded-2xl border-t-4 border-gold-300 border-x border-b border-slate-800 shadow-xl space-y-3">
+                <span class="text-xs font-serif font-bold text-gold-300 uppercase tracking-widest block">3. Seguridad Operativa</span>
+                <h3 class="text-sm font-bold text-white">Riesgo Regional y Tensión Etnorregional</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    Paz consolidada en Tigray tras el Acuerdo de Pretoria (2022). No obstante, persisten focos de insurrección localizada en Amhara (Fano) y Oromia (OLA) que exigen protocolos de mitigación logística.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="infrastructure" class="space-y-6">
+        <div class="flex items-center space-x-3 border-l-4 border-gold-400 pl-4">
+            <div>
+                <h2 class="text-xl md:text-2xl font-serif font-bold text-white tracking-wide">5. Infraestructura, Tecnología e Integración Internacional</h2>
+                <p class="text-xs text-slate-400">Logística de comercio, aerolínea bandera, adopción digital y alianzas BRICS / AfCFTA.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-7 bg-navy-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+                <h3 class="text-sm font-serif font-bold text-white mb-1">Estructura de Exportación de Productos Clave</h3>
+                <p class="text-xs text-slate-400 mb-4">Composición por sectores generadores de divisas primarias.</p>
+
+                <div class="chart-container">
+                    <canvas id="tradeChart"></canvas>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 bg-navy-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-3 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-serif font-bold text-gold-400 mb-3">Infraestructura y Conectividad Global</h3>
+                    <div class="space-y-2.5 text-xs">
+                        <div class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                            <span class="text-gold-400 font-bold block mb-0.5">✈️ Ethiopian Airlines</span>
+                            Líder absoluto del transporte aéreo de carga y pasajeros en África, interconectando Adís Abeba con más de 130 centros de comercio internacional.
+                        </div>
+                        <div class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                            <span class="text-gold-400 font-bold block mb-0.5">🚆 Corredor Ferroviario Adís Abeba–Yibuti</span>
+                            Línea electrificada que canaliza más del 95% del comercio marítimo de importación y exportación de la nación.
+                        </div>
+                        <div class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                            <span class="text-gold-400 font-bold block mb-0.5">📲 Digitalización y Billeteras Móviles</span>
+                            Rápido crecimiento de usuarios con la llegada de Safaricom Ethiopia y la expansión masiva de plataformas financieras como Telebirr y M-Pesa.
+                        </div>
+                        <div class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                            <span class="text-gold-400 font-bold block mb-0.5">🌐 Alianza BRICS y Tratado AfCFTA</span>
+                            Adhesión formal al bloque BRICS en 2024, abriendo fuentes alternas de financiamiento mediante el Nuevo Banco de Desarrollo (NDB).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="energy" class="space-y-6">
+        <div class="flex items-center space-x-3 border-l-4 border-gold-400 pl-4">
+            <div>
+                <h2 class="text-xl md:text-2xl font-serif font-bold text-white tracking-wide">6. Sostenibilidad, Energía y Transición Ecológica</h2>
+                <p class="text-xs text-slate-400">Capacidad hídrica, megaproyecto GERD y política pionera en electromovilidad.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-5 bg-navy-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+                <h3 class="text-sm font-serif font-bold text-white mb-1">Matriz de Generación Eléctrica</h3>
+                <p class="text-xs text-slate-400 mb-4">Distribución por fuentes de energía alineada con los tonos corporativos JGF Capital.</p>
+
+                <div class="chart-container">
+                    <canvas id="energyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-navy-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-sm font-serif font-bold text-gold-400 mb-3">Liderazgo Energético y Retos Ambientales</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <div class="bg-navy-950 p-3.5 rounded-xl border border-slate-800">
+                            <span class="text-gold-400 font-bold block mb-1">💧 Megapresa Hidroeléctrica (GERD)</span>
+                            Aporta más de 5,000 MW de capacidad nominal, transformando a Etiopía en el principal exportador neto de energía limpia para Sudán, Kenia y Yibuti.
+                        </div>
+                        <div class="bg-navy-950 p-3.5 rounded-xl border border-slate-800">
+                            <span class="text-steel-400 font-bold block mb-1">🚗 Transición a Vehículos Eléctricos</span>
+                            Primer país en prohibir la importación de autos de pasajeros con motor de combustión interna, incentivando la movilidad 100% eléctrica.
+                        </div>
+                        <div class="bg-navy-950 p-3.5 rounded-xl border border-slate-800">
+                            <span class="text-gold-300 font-bold block mb-1">⚡ Costos Tarifarios Industriales</span>
+                            Ofrece una de las tarifas eléctricas por kWh más bajas del continente, atrayendo plantas industriales e infraestructura tecnológica.
+                        </div>
+                        <div class="bg-navy-950 p-3.5 rounded-xl border border-slate-800">
+                            <span class="text-slate-300 font-bold block mb-1">🌾 Vulnerabilidad a Sequías</span>
+                            El cambio climático genera variaciones pluviométricas extremas que impactan la agricultura de secano y la seguridad alimentaria en zonas rurales.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3.5 bg-navy-950 rounded-xl border border-slate-800 text-xs text-slate-300">
+                    <span class="text-gold-400 font-bold">Diagnóstico ESG:</span> Etiopía presenta un perfil altamente favorable para fondos de inversión alineados con criterios ESG de descarbonización y desarrollo sostenible.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="synthesis" class="space-y-6">
+        <div class="flex items-center space-x-3 border-l-4 border-gold-400 pl-4">
+            <div>
+                <h2 class="text-xl md:text-2xl font-serif font-bold text-white tracking-wide">7. Matriz Comparativa y Mapa de Hallazgos Estratégicos</h2>
+                <p class="text-xs text-slate-400">Síntesis integradora de las 7 dimensiones analizadas y recomendación corporativa de JGF Capital.</p>
+            </div>
+        </div>
+
+        <div class="bg-navy-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+            <div class="p-5 border-b border-slate-800 bg-navy-950/80">
+                <h3 class="text-sm font-serif font-bold text-gold-400">Matriz de Evaluación Sintética de las 7 Dimensiones</h3>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs text-slate-300">
+                    <thead class="bg-navy-950 text-gold-400 uppercase font-serif text-[11px]">
+                        <tr>
+                            <th class="p-4 border-b border-slate-800">Dimensión Evaluada</th>
+                            <th class="p-4 border-b border-slate-800">Clasificación</th>
+                            <th class="p-4 border-b border-slate-800">Fundamento Analítico Principal</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800/60">
+                        <tr class="hover:bg-navy-950/40">
+                            <td class="p-4 font-semibold text-white">1. Demografía y Mercado Potencial</td>
+                            <td class="p-4"><span class="px-2.5 py-1 rounded text-[10px] font-bold bg-gold-400/15 text-gold-300 border border-gold-400/30">Fortaleza (+)</span></td>
+                            <td class="p-4">138M+ de habitantes, edad mediana de 19.3 años y expansión acelerada de la demanda interna.</td>
+                        </tr>
+                        <tr class="hover:bg-navy-950/40">
+                            <td class="p-4 font-semibold text-white">2. Capital Humano y Desarrollo Social</td>
+                            <td class="p-4"><span class="px-2.5 py-1 rounded text-[10px] font-bold bg-slate-800/80 text-slate-300 border border-slate-700">Vulnerabilidad (-)</span></td>
+                            <td class="p-4">IDH de 0.498 (puesto 175), retos estructurales de pobreza (32-43%) y brecha en formación técnica.</td>
+                        </tr>
+                        <tr class="hover:bg-navy-950/40">
+                            <td class="p-4 font-semibold text-white">3. Instituciones y Gobernanza</td>
+                            <td class="p-4"><span class="px-2.5 py-1 rounded text-[10px] font-bold bg-gold-400/15 text-gold-300 border border-gold-400/30">Condición Mixta (±)</span></td>
+                            <td class="p-4">Creación de la ESX y flotación cambiaria contrapuestas con tensiones etnorregionales activas.</td>
+                        </tr>
+                        <tr class="hover:bg-navy-950/40">
+                            <td class="p-4 font-semibold text-white">4. Infraestructura y Tecnología</td>
+                            <td class="p-4"><span class="px-2.5 py-1 rounded text-[10px] font-bold bg-gold-400/15 text-gold-300 border border-gold-400/30">Condición Mixta (±)</span></td>
+                            <td class="p-4">Liderazgo aéreo regional de Ethiopian Airlines frente a dependencia del puerto de Yibuti (&gt;95%).</td>
+                        </tr>
+                        <tr class="hover:bg-navy-950/40">
+                            <td class="p-4 font-semibold text-white">5. Integración Internacional</td>
+                            <td class="p-4"><span class="px-2.5 py-1 rounded text-[10px] font-bold bg-steel-400/15 text-steel-400 border border-steel-400/30">Fortaleza (+)</span></td>
+                            <td class="p-4">Miembro formal del bloque BRICS, marco de libre comercio AfCFTA y alianza económica con Emiratos y China.</td>
+                        </tr>
+                        <tr class="hover:bg-navy-950/40">
+                            <td class="p-4 font-semibold text-white">6. Sostenibilidad y Recursos</td>
+                            <td class="p-4"><span class="px-2.5 py-1 rounded text-[10px] font-bold bg-gold-400/15 text-gold-300 border border-gold-400/30">Fortaleza (+)</span></td>
+                            <td class="p-4">Matriz renovable &gt;90%, megaproyecto hidroeléctrico GERD y política pionera de sustitución de motor térmico.</td>
+                        </tr>
+                        <tr class="hover:bg-navy-950/40">
+                            <td class="p-4 font-semibold text-white">7. Desempeño Macroeconómico</td>
+                            <td class="p-4"><span class="px-2.5 py-1 rounded text-[10px] font-bold bg-gold-400/15 text-gold-300 border border-gold-400/30">Condición Mixta (±)</span></td>
+                            <td class="p-4">Crecimiento real del PIB dinámico (&gt;7% anual) atenuado por volatilidad de ajuste inflacionario.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-navy-900 border-t-4 border-gold-400 border-x border-b border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+                <h4 class="text-sm font-serif font-bold text-gold-400 uppercase tracking-widest flex items-center">
+                    <span class="mr-2">◈</span> 3 Fortalezas Estructurales
+                </h4>
+                <ul class="space-y-2.5 text-xs text-slate-300">
+                    <li class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                        <strong class="text-white block mb-0.5">1. Bono Demográfico Masivo:</strong> 2º mercado poblacional más grande del continente africano con mano de obra joven.
+                    </li>
+                    <li class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                        <strong class="text-white block mb-0.5">2. Matriz Hidroeléctrica de Bajo Costo:</strong> Ventaja competitiva única para sectores industriales de alto consumo energético.
+                    </li>
+                    <li class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                        <strong class="text-white block mb-0.5">3. Hub Logístico Aéreo Global:</strong> Conectividad consolidada a través de la infraestructura de Ethiopian Airlines.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-navy-900 border-t-4 border-steel-400 border-x border-b border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+                <h4 class="text-sm font-serif font-bold text-steel-400 uppercase tracking-widest flex items-center">
+                    <span class="mr-2">◈</span> 3 Oportunidades Potenciales
+                </h4>
+                <ul class="space-y-2.5 text-xs text-slate-300">
+                    <li class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                        <strong class="text-white block mb-0.5">1. Mercado de Capitales y ESX:</strong> Participación bursátil en la privatización parcial de empresas estatales líderes.
+                    </li>
+                    <li class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                        <strong class="text-white block mb-0.5">2. Inclusión Digital y Fintech:</strong> Expansión de servicios bancarios móviles (Telebirr / M-Pesa).
+                    </li>
+                    <li class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                        <strong class="text-white block mb-0.5">3. Agroindustria y Minería Aurífera:</strong> Procesamiento de café de especialidad, horticultura y minería de oro.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-navy-900 border-t-4 border-gold-300 border-x border-b border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+                <h4 class="text-sm font-serif font-bold text-gold-300 uppercase tracking-widest flex items-center">
+                    <span class="mr-2">◈</span> 3 Vulnerabilidades / Riesgos
+                </h4>
+                <ul class="space-y-2.5 text-xs text-slate-300">
+                    <li class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                        <strong class="text-white block mb-0.5">1. Riesgo de Seguridad Regional:</strong> Tensiones etnorregionales activas en Amhara y Oromia.
+                    </li>
+                    <li class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                        <strong class="text-white block mb-0.5">2. Concentración Portuaria:</strong> Alta dependencia logística del corredor de Yibuti para importaciones.
+                    </li>
+                    <li class="p-3 bg-navy-950 rounded-xl border border-slate-800">
+                        <strong class="text-white block mb-0.5">3. Ajuste Inflacionario Cambiario:</strong> Volatilidad temporal de precios tras la liberación del tipo de cambio.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-navy-950 via-navy-900 to-navy-950 border-2 border-gold-400 rounded-2xl p-6 md:p-8 shadow-2xl space-y-4">
+            <div class="flex items-center space-x-3">
+                <span class="h-0.5 w-8 bg-gold-400"></span>
+                <span class="text-gold-400 font-serif font-bold text-sm tracking-widest uppercase">Dictamen de Inversión | JGF Capital</span>
+            </div>
+            <p class="text-xs md:text-sm text-slate-200 leading-relaxed font-light">
+                Etiopía califica como un mercado de <strong class="text-gold-400 font-semibold">alto potencial de crecimiento con riesgo calibrado</strong>. Se sugiere una estrategia de entrada focalizada en sectores beneficiados directamente por el proceso de liberalización institucional (servicios financieros digitales, energía limpia, agroindustria de exportación y telecomunicaciones). Es imperativo establecer esquemas de cobertura cambiaria y alianzas con socios locales de trayectoria comprobada.
+            </p>
+            <div class="pt-2 text-xs text-gold-300 font-serif font-semibold">
+                Johana Salazar • Cristian Torres • Francisco Suarez — Consultoría • Economía • Inversiones
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-navy-950 border-t border-slate-800 mt-16 py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
+        <div class="flex justify-center items-center space-x-3">
+            <span class="font-serif text-lg font-bold text-gold-400 tracking-widest">JGF CAPITAL</span>
+            <span class="text-slate-600">|</span>
+            <span class="text-xs font-light text-slate-300">Visión financiera, crecimiento sostenible</span>
+        </div>
+        <p class="text-[11px] text-slate-500 max-w-2xl mx-auto">
+            © 2026 JGF Capital Division of Emerging Markets Research. Documento exclusivo de inteligencia estratégica de mercado y análisis de inversión corporativa.
+        </p>
+    </div>
+</footer>
+
+<script>
+    function wrapLabel(str, maxChars = 16) {
+        if (typeof str !== 'string') return str;
+        if (str.length <= maxChars) return str;
+        const words = str.split(' ');
+        const lines = [];
+        let currentLine = '';
+        words.forEach(word => {
+            if ((currentLine + ' ' + word).trim().length > maxChars) {
+                if (currentLine) lines.push(currentLine.trim());
+                currentLine = word;
+            } else {
+                currentLine = (currentLine + ' ' + word).trim();
+            }
+        });
+        if (currentLine) lines.push(currentLine.trim());
+        return lines;
+    }
+
+    const commonTooltipOption = {
+        callbacks: {
+            title: function(tooltipItems) {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            }
+        }
+    };
+
+    Chart.defaults.color = '#94A3B8';
+    Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
+
+    let demographicsChartInstance = null;
+
+    function initDemographicsChart() {
+        const ctx = document.getElementById('demographicsChart').getContext('2d');
+        const labelsRaw = ['2026', '2031', '2036', '2041', '2046', '2051', '2056'];
+        const formattedLabels = labelsRaw.map(l => wrapLabel(l, 16));
+
+        demographicsChartInstance = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: formattedLabels,
+                datasets: [
+                    {
+                        label: 'Población Total (Millones)',
+                        data: [138.90, 157.48, 178.53, 202.39, 229.45, 260.12, 294.89],
+                        borderColor: '#D4AF37',
+                        backgroundColor: 'rgba(212, 175, 55, 0.12)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.35,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#D4AF37'
+                    },
+                    {
+                        label: 'Población Urbana (Millones)',
+                        data: [31.80, 42.50, 57.10, 76.90, 103.20, 137.80, 176.90],
+                        borderColor: '#B8C9DC',
+                        backgroundColor: 'rgba(184, 201, 220, 0.08)',
+                        borderWidth: 2,
+                        borderDash: [5, 5],
+                        fill: true,
+                        tension: 0.35,
+                        pointRadius: 3,
+                        pointBackgroundColor: '#B8C9DC'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: commonTooltipOption,
+                    legend: {
+                        position: 'top',
+                        labels: { color: '#E2E8F0', font: { size: 11 } }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { color: 'rgba(30, 41, 59, 0.5)' },
+                        ticks: { color: '#94A3B8' }
+                    },
+                    y: {
+                        grid: { color: 'rgba(30, 41, 59, 0.5)' },
+                        ticks: { color: '#94A3B8' },
+                        title: { display: true, text: 'Millones de Habitantes', color: '#CBD5E1' }
+                    }
+                }
+            }
+        });
+    }
+
+    function updateDemographicModel() {
+        const basePop = 138.90;
+        const growthRate = parseFloat(document.getElementById('growthSlider').value);
+        const targetYear = parseInt(document.getElementById('yearSlider').value);
+        const urbanPct = parseFloat(document.getElementById('urbanSlider').value);
+
+        document.getElementById('growthVal').innerText = growthRate.toFixed(2) + '%';
+        document.getElementById('yearVal').innerText = targetYear;
+        document.getElementById('urbanVal').innerText = urbanPct.toFixed(1) + '%';
+
+        const yearsDiff = targetYear - 2026;
+        const projectedPop = basePop * Math.pow(1 + (growthRate / 100), yearsDiff);
+        const netAdd = projectedPop - basePop;
+        const projectedUrban = projectedPop * (urbanPct / 100);
+        const annualJobsReq = (projectedPop * 0.0135);
+
+        document.getElementById('resPop').innerText = projectedPop.toFixed(2) + ' M';
+        document.getElementById('resNet').innerText = (netAdd >= 0 ? '+' : '') + netAdd.toFixed(2) + ' M';
+        document.getElementById('resUrban').innerText = projectedUrban.toFixed(2) + ' M';
+        document.getElementById('resJobs').innerText = annualJobsReq.toFixed(2) + ' M/año';
+
+        if (demographicsChartInstance) {
+            const chartYears = [2026, 2031, 2036, 2041, 2046, 2051, 2056];
+            const newTotalData = [];
+            const newUrbanData = [];
+
+            chartYears.forEach(yr => {
+                const yDiff = yr - 2026;
+                const popAtYr = basePop * Math.pow(1 + (growthRate / 100), yDiff);
+                const progressRatio = Math.min(1, Math.max(0, yDiff / (targetYear - 2026 || 1)));
+                const urbanPctAtYr = 22.9 + (urbanPct - 22.9) * progressRatio;
+                
+                newTotalData.push(popAtYr.toFixed(2));
+                newUrbanData.push((popAtYr * (urbanPctAtYr / 100)).toFixed(2));
+            });
+
+            demographicsChartInstance.data.datasets[0].data = newTotalData;
+            demographicsChartInstance.data.datasets[1].data = newUrbanData;
+            demographicsChartInstance.update();
+        }
+    }
+
+    function initHumanCapitalChart() {
+        const ctx = document.getElementById('humanCapitalChart').getContext('2d');
+        const rawLabels = [
+            'Matriculación Primaria (%)',
+            'Esperanza de Vida (Años)',
+            'Tasa Alfabetización (%)',
+            'Población Rural (%)',
+            'Matriculación Secundaria (%)'
+        ];
+        const formattedLabels = rawLabels.map(l => wrapLabel(l, 16));
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: formattedLabels,
+                datasets: [{
+                    label: 'Métrica Registrada',
+                    data: [76.0, 68.0, 52.0, 77.1, 30.0],
+                    backgroundColor: [
+                        '#FAF0CA',
+                        '#E2C784',
+                        '#D4AF37',
+                        '#B8C9DC',
+                        '#5C7B97'
+                    ],
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: commonTooltipOption,
+                    legend: { display: false }
+                },
+                scales: {
+                    x: {
+                        grid: { color: 'rgba(30, 41, 59, 0.5)' },
+                        ticks: { color: '#94A3B8' },
+                        max: 100
+                    },
+                    y: {
+                        grid: { display: false },
+                        ticks: { color: '#E2E8F0', font: { size: 11 } }
+                    }
+                }
+            }
+        });
+    }
+
+    function initTradeChart() {
+        const ctx = document.getElementById('tradeChart').getContext('2d');
+        const rawLabels = ['Café de Especialidad', 'Oro y Minerales', 'Flores Cortadas', 'Semillas Oleaginosas', 'Electricidad Exportada'];
+        const formattedLabels = rawLabels.map(l => wrapLabel(l, 16));
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: formattedLabels,
+                datasets: [{
+                    label: 'Participación en Exportaciones (%)',
+                    data: [35.0, 22.0, 15.0, 12.0, 8.0],
+                    backgroundColor: '#C5A059',
+                    hoverBackgroundColor: '#D4AF37',
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: commonTooltipOption,
+                    legend: { display: false }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: '#E2E8F0', font: { size: 10 } }
+                    },
+                    y: {
+                        grid: { color: 'rgba(30, 41, 59, 0.5)' },
+                        ticks: { color: '#94A3B8' },
+                        title: { display: true, text: 'Porcentaje (%)', color: '#CBD5E1' }
+                    }
+                }
+            }
+        });
+    }
+
+    function initEnergyChart() {
+        const ctx = document.getElementById('energyChart').getContext('2d');
+        const rawLabels = ['Hidroeléctrica (GERD)', 'Eólica y Solar', 'Geotérmica', 'Térmica / Otros'];
+        const formattedLabels = rawLabels.map(l => wrapLabel(l, 16));
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: formattedLabels,
+                datasets: [{
+                    data: [88.0, 7.0, 3.0, 2.0],
+                    backgroundColor: [
+                        '#D4AF37',
+                        '#E2C784',
+                        '#B8C9DC',
+                        '#2C435A'
+                    ],
+                    borderWidth: 2,
+                    borderColor: '#060B14'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: commonTooltipOption,
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#E2E8F0', font: { size: 11 }, padding: 15 }
+                    }
+                },
+                cutout: '68%'
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        initDemographicsChart();
+        initHumanCapitalChart();
+        initTradeChart();
+        initEnergyChart();
+        updateDemographicModel();
+    });
+</script>
+
+</body>
+</html>
